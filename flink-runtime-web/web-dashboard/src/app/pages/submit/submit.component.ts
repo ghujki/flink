@@ -187,6 +187,7 @@ export class SubmitComponent implements OnInit, OnDestroy {
   }
 
   public submitJob(jar: JarFilesItem): void {
+    this.isUploading = true;
     this.jarService
       .runJob(
         jar.id,
