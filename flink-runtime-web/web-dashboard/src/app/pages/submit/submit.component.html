@@ -115,7 +115,7 @@
                 <nz-form-item>
                   <nz-form-control>
                     <button nz-button (click)="showPlan(jar)">Show Plan</button>
-                    <button nz-button nzType="primary" (click)="submitJob(jar)">Submit</button>
+                    <button nz-button nzType="primary" (click)="submitJob(jar)" [disabled]="isUploading">Submit</button>
                   </nz-form-control>
                 </nz-form-item>
               </form>
